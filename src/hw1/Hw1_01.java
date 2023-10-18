@@ -13,5 +13,6 @@ public class Hw1_01 {
 	
 		System.out.println("=== test ===");
 		System.out.println("=== test 2===");
+		System.out.println("=== test 3===");
 	}
 }
