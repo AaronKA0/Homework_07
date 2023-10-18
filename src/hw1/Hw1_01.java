@@ -10,5 +10,8 @@ public class Hw1_01 {
 
 		System.out.println("12 + 6 = " + add);
 		System.out.println("12 x 6 = " + mul);
+	
+		System.out.println("=== test ===");
+		System.out.println("=== test 2===");
 	}
 }
