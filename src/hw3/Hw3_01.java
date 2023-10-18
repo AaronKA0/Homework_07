@@ -9,8 +9,12 @@ import java.util.Scanner;
 
 public class Hw3_01 {
 	public static void main(String[] args) {
-	
+		
+		int[] triangle = new int[3];
 		Scanner sc = new Scanner(System.in);
+		for (int i = 0; i < triangle.length; i++) {
+			triangle[i] = sc.nextInt();
+		}
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		int c = sc.nextInt();
