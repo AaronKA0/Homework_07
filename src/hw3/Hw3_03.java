@@ -30,6 +30,6 @@ public class Hw3_03 {
 			count++;
 		}
 		System.out.println();
-		System.out.println("總共: " + count);
+		System.out.println("總共有 " + count + " 個數字可選");
 	}
 }
