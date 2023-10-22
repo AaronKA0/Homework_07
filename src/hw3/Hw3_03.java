@@ -11,23 +11,22 @@ import java.util.Scanner;
 public class Hw3_03 {
 	public static void main(String[] args) {
 		
-		int count = 0, hate = 0;
-		//int[][] array = new int[7][7];
+		int count = 0, hate = 0;					//宣告count存放總共幾個數字可選，hate存放阿文討厭的數字
 		
 		Scanner sc = new Scanner(System.in);
 		
-		while(true) {
+		while(true) {								//設定無窮迴圈，直到數字在所訂的範圍內
 			System.out.println("阿文...請輸入你討厭哪個數字: (數字 1~9)");
-			hate = sc.nextInt();
-			if ( hate > 0 && hate < 10)
+			hate = sc.nextInt();					//將輸入的數字存放到hate
+			if ( hate > 0 && hate < 10)				//若數字在0~9則跳出迴圈
 				break;
 		}
 			
-		for (int n = 1; n < 50; n++) {
-			if (n % 10 == hate || n / 10 == hate)
-				continue;
-			System.out.print(n + " ");
-			count++;
+		for (int n = 1; n < 50; n++) {				//n從1~49每個數字與hate做運算
+			if (n % 10 == hate || n / 10 == hate)	//n%10=hate 可以找出個位數是否=hate
+				continue;							//n/10=hate 可以找出十位數是否=hate
+			System.out.print(n + " ");				//如果條件符合則continue跳過下面執行
+			count++;								//計數器符合+1，計算總個數
 		}
 		System.out.println();
 		System.out.println("總共有 " + count + " 個數字可選");
