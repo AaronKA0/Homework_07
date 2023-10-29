@@ -1,4 +1,4 @@
-package classTest;
+package classtest;
 
 public class AnimalTest {
 	public static void main(String[] args) {
@@ -6,9 +6,11 @@ public class AnimalTest {
 		Animal a = new Animal(2, 5.0f);
 		a.speak();
 		
+		//System.out.println(a);	//執行Animal toString方法
+		
 //		如果過了三年，體重年齡增加需要修改
 		
-//  	a.age = 5;			//建構子編譯錯誤
+//		a.age = 5;			//建構子編譯錯誤
 //		a.weight = 8.0f;	//建構子編譯錯誤
 		
 //		a.Animal(5, 8.0f);	//建構子編譯錯誤

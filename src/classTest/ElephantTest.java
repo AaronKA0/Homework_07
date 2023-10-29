@@ -1,4 +1,4 @@
-package classTest;
+package classtest;
 
 public class ElephantTest {
 	public static void main(String[] args) {

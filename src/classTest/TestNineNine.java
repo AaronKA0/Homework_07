@@ -1,4 +1,4 @@
-package classTest;
+package classtest;
 
 //九九乘法表 BOOK(p.44)
 public class TestNineNine {

@@ -1,4 +1,4 @@
-package classTest;
+package classtest;
 
 public class Elephant extends Animal {
 	private String name;

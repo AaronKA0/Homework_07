@@ -1,4 +1,4 @@
-package classTest;
+package classtest;
 
 // BOOK(p.53)
 public class Student {

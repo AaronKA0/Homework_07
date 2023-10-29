@@ -1,4 +1,4 @@
-package classTest;
+package classtest;
 
 public class Animal {
 	private int age;
@@ -10,8 +10,14 @@ public class Animal {
 	}
 
 	public void speak() {
-		System.out.println(age + "歲 " + weight + "公斤");
+		System.out.println(age + "歲 ");
+		System.out.println(weight + "公斤 ");
 	}
+//	//可以直接改寫 override
+//	public String toString() {
+//		String result = age + "歲 " + weight + "公斤 ";
+//		return result;
+//	}
 	
 	public void setAge(int age) {
 		this.age = age;

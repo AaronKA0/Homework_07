@@ -33,6 +33,5 @@ public class Hw3_01 {
 		} else {									//上面三角形都不是則為其他三角形
 			System.out.println("其他三角形");
 		}
-
 	}
 }

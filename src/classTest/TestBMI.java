@@ -1,4 +1,4 @@
-package classTest;
+package classtest;
 
 //計算自己的BMI並判斷 BOOK(p.39)
 public class TestBMI {

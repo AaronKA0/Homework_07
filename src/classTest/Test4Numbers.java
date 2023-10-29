@@ -1,4 +1,4 @@
-package classTest;
+package classtest;
 
 //0~100裡4的倍數 BOOK(p.44)
 public class Test4Numbers {

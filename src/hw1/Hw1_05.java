@@ -6,15 +6,16 @@ package hw1;
 
 public class Hw1_05 {
 	public static void main(String[] args) {
-		double fv = 0; // 設定本金和fv初始值
-		double pv = 1_500_000; // 本金 1,500,000
-		double i = 1.02; // 設定 i=(1+年利率2%)
-		double sum = 1; // 設定sum初始值1
+		
+		double fv = 0;				// 設定本金和fv初始值
+		double pv = 1_500_000;		// 本金 1,500,000
+		double i = 1.02;			// 設定 i=(1+年利率2%)
+		double sum = 1;				// 設定sum初始值1
 
 		for (int n = 0; n < 10; n++)
-			sum *= i; // sum=(1 + 年利率)^期間
+			sum *= i;				// sum=(1 + 年利率)^期間
 
-		fv = pv * sum; // 本利和 = 本金 × sum
+		fv = pv * sum;				// 本利和 = 本金 × sum
 
 		System.out.println("本金150萬, 年利率2%, 10年後本金加利息 = $" + fv);
 	}
