@@ -9,9 +9,9 @@ public class Hw3_03_plus{
 	public static void main(String[] args) {
 		
 		int count = 0, hate = 0;					//宣告count計數器，hate存放阿文討厭的數字
-		int[] a = new int[43];						//宣告a陣列，存放阿文喜歡的數字
+		int[] a = new int[49];						//宣告a陣列，存放阿文喜歡的數字
 		int[] b = new int[6];						//宣告b陣列，存放隨機6個號碼
-		int r ;										//宣告r，存放一個隨機亂數
+		int r = 0, s1 = 0, s2 = 0;										//宣告r，存放一個隨機亂數
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -29,19 +29,21 @@ public class Hw3_03_plus{
 			a[count] = n;
 			count++;								//計數器:數字符合+1，計算總個數
 		}
+		Arrays.sort(a);								//下方進行binarySearch先進行排序
 		System.out.println();
 		System.out.println("總共有 " + (count+1) + " 個數字可選");
 
 		count = 0;									//計數器歸0
 		while(count < 6) {							//計數器 < 6，代表陣列b未填滿數字，迴圈繼續
 			r = (int)((Math.random()*49)+1);		//1~49產生一個亂數指定給r
-			int s1 = Arrays.binarySearch(a, r);		//判斷r是否有存在阿文喜歡的數字(陣列a)內
-			int s2 = Arrays.binarySearch(b, r);		//判斷r是否已經存在選出的6個數字(陣列b)內
+			s1 = Arrays.binarySearch(a, r);			//判斷r是否有存在阿文喜歡的數字(陣列a)內
+			s2 = Arrays.binarySearch(b, r);			//判斷r是否已經存在選出的6個數字(陣列b)內
 			
-			if (s1 < 0 || s2 > 0) 					//若s1是負數，代表沒有在阿文喜歡的數字內，跳回重新產生亂數 
-				continue;							//或者若s2是正數，已經是選過的數字，跳回重新產生亂數
-			b[count] = r;							//以上條件不成立代表數字r許可，放到b陣列
-			count++;								//計數器+1繼續下一個數字
+			if (s1 >= 0 && s2 < 0) { 		//s1正數代表有在阿文喜歡的數字內，s2負數代表沒有重複
+				b[0] = r;					//兩個條件都成立代表數字r許可，放到b陣列
+				count++;					//計數器+1繼續下一個數字
+			}
+			Arrays.sort(b);					//每次使用binarySearch之前必須排序
 		}
 		
 		Arrays.sort(b);								//將陣列b排序後印出

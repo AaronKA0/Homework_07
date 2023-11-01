@@ -19,7 +19,7 @@ public class Hw4_03 {
 		for (int i = 0; i < v.length(); i++) {							//將v字串每個字元轉成int放入a陣列
 			a[i] = v.charAt(i);
 		}
-		Arrays.sort(a);													//將a陣列排序
+		Arrays.sort(a);													//呼叫binarySearch前，先將a陣列排序
 		
 		for (int i = 0; i < 8; i++) {									//依序取出字串
 			for (int j = 0; j < s[i].length(); j++) {					//依序取出字串中的字元
