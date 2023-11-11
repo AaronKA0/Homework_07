@@ -20,7 +20,10 @@ public abstract class Pen {
 
 	public Pen(String brand, double price) {
 		this.brand = brand;
-		this.price = price;
+		if(price > 0)
+			this.price = price;
+		else
+			System.out.println("請確認價格設定");
 	}
 
 	public void setBrand(String brand) {
@@ -28,7 +31,10 @@ public abstract class Pen {
 	}
 
 	public void setPrice(double price) {
-		this.price = price;
+		if(price > 0)
+			this.price = price;
+		else
+			System.out.println("請確認價格設定");
 	}
 
 	public double getPrice() {
