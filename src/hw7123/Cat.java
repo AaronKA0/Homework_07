@@ -1,4 +1,4 @@
-package hw7;
+package hw7123;
 
 public class Cat implements AnimalSpeak {	//繼承 AnimalSpeak 介面
 	private static final long serialVersionUID = 1L; 

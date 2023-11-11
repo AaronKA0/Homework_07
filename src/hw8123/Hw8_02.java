@@ -15,7 +15,7 @@
 // 承上，不僅能讓班次編號由大排到小印出， 還可以不重複印出Train物件
 // (以上三題請根據使用的集合，練習各種取值寫法，如迭代器、for迴圈或foreach等)
 
-package hw8;
+package hw8123;
 
 import java.util.Set;
 import java.util.TreeSet;
