@@ -1,4 +1,4 @@
-package Hw7;
+package hw7;
 
 import java.io.Serializable;
 

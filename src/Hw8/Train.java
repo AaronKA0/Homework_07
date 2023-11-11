@@ -1,4 +1,4 @@
-package Hw8;
+package hw8;
 
 import java.util.Objects;
 
