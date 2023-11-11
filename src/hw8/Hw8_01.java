@@ -5,7 +5,7 @@
 // 2. 移除不是java.lang.Number相關的物件
 // 3. 再次印出這個集合物件的所有元素，觀察是否已將非Number相關的物件移除成功
 
-package hw8123;
+package hw8;
 
 import java.math.BigInteger;
 import java.util.ArrayList;

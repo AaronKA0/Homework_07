@@ -1,4 +1,4 @@
-package hw7123;
+package hw7;
 
 public class Dog implements AnimalSpeak {	//繼承 AnimalSpeak 介面
 	private static final long serialVersionUID = 1L; 
